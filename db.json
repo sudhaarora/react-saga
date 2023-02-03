@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Sudha Arora",
+      "email": "sudha@gmail.com",
+      "phone": 1234567894,
+      "address": "Mangalam Anada City"
+    },
+    {
+      "name": "tester",
+      "email": "tester@gmail.com",
+      "phone": "2743534599",
+      "address": "test address here",
+      "id": 2
+    }
+  ]
+}
