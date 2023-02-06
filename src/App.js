@@ -12,6 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
+      <ToastContainer />
       <Header />
       <Routes>
         <Route exact path='/' element={<Home />} />

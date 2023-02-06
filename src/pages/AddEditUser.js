@@ -31,6 +31,9 @@ const AddEditUser = () => {
       setEditMode(true);
       const singleUser = users.find((item) => item.id === Number(id));
       setFormValue({ ...singleUser });
+    }else{
+      setEditMode(false);
+      setFormValue({...initialState})
     }
   }, [id]);
 
@@ -40,12 +43,12 @@ const AddEditUser = () => {
       if (!editMode) {
         dispatch(createUsersStart(formValue));
         toast.success("User Added Successfully!");
-        setTimeout(() => navigate.push("/"), 500);
+        setTimeout(() => navigate("/"), 500);
       } else {
         dispatch(updateUserStart({ id, formValue }));
         setEditMode(false);
         toast.success("User Update Successfully!");
-        setTimeout(() => navigate.push("/"), 500);
+        setTimeout(() => navigate("/"), 500);
       }
     }
   };
@@ -56,7 +59,7 @@ const AddEditUser = () => {
   };
 
   const handleGoBack = () => {
-    navigate.push("/");
+    navigate("/");
   };
   return (
     <MDBValidation

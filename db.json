@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "name": "Sudha Arora",
+      "name": "Sudha Khatri",
       "email": "sudha@gmail.com",
       "phone": 1234567894,
       "address": "Mangalam Anada City"
@@ -13,6 +13,13 @@
       "phone": "2743534599",
       "address": "test address here",
       "id": 2
+    },
+    {
+      "name": "suman",
+      "email": "suman@gmail.com",
+      "phone": "1234676454",
+      "address": "tester here",
+      "id": 6
     }
   ]
 }

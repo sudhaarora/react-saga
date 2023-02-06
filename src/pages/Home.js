@@ -21,18 +21,20 @@ const Home = () => {
     dispatch(loadUsersStart());
   }, []);
 
-  if(loading){
-    return(
-      <MDBSpinner style={{marginTop: "150px"}} role="status">
+
+  if (loading) {
+    return (
+      <MDBSpinner style={{ marginTop: "150px" }} role="status">
         <span className="visually-hidden">Loading...</span>
       </MDBSpinner>
-    )
+    );
   }
 
-  const handleDelte = (id) => {console.log("id",id)
-    if(window.confirm("Are you sure you want to delete that user?")){
+  const handleDelte = (id) => {
+    console.log("id", id);
+    if (window.confirm("Are you sure you want to delete that user?")) {
       dispatch(deleteUserStart(id));
-      toast.success("User Deleted Successfully!")
+      toast.success("User Deleted Successfully!");
     }
   };
 
@@ -49,10 +51,10 @@ const Home = () => {
             <th scope="col">Action</th>
           </tr>
         </MDBTableHead>
-        {users &&
-          users.map((item, index) => (
-            <MDBTableBody key={index}>
-              <tr>
+        <MDBTableBody>
+          {users &&
+            users.map((item, index) => (
+              <tr key={index}>
                 <th scope="row">{index + 1}</th>
                 <td>{item.name}</td>
                 <td>{item.email}</td>
@@ -104,8 +106,8 @@ const Home = () => {
                   </Link>
                 </td>
               </tr>
-            </MDBTableBody>
-          ))}
+            ))}
+        </MDBTableBody>
       </MDBTable>
     </div>
   );
