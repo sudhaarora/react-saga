@@ -39,7 +39,7 @@ const Home = () => {
   };
 
   return (
-    <div className="container" style={{ marginTop: "150px" }}>
+    <div className="container" style={{ marginTop: "50px" }}>
       <MDBTable>
         <MDBTableHead dark>
           <tr>

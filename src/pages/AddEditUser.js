@@ -43,12 +43,12 @@ const AddEditUser = () => {
       if (!editMode) {
         dispatch(createUsersStart(formValue));
         toast.success("User Added Successfully!");
-        setTimeout(() => navigate("/"), 500);
+        navigate("/");
       } else {
         dispatch(updateUserStart({ id, formValue }));
         setEditMode(false);
         toast.success("User Update Successfully!");
-        setTimeout(() => navigate("/"), 500);
+        navigate("/")
       }
     }
   };
@@ -87,8 +87,6 @@ const AddEditUser = () => {
             onChange={onInputChange}
             required
             label="Name"
-            // validation="Please provide a name"
-            // invalid
           />
         </MDBValidationItem>
         <br />
@@ -101,8 +99,6 @@ const AddEditUser = () => {
             onChange={onInputChange}
             required
             label="Email"
-            // validation="Please provide a email"
-            // invalid
           />
         </MDBValidationItem>
         <br />
@@ -115,8 +111,6 @@ const AddEditUser = () => {
             onChange={onInputChange}
             required
             label="Phone"
-            // validation="Please provide a phone no."
-            // invalid
           />
         </MDBValidationItem>
         <br />
@@ -129,8 +123,6 @@ const AddEditUser = () => {
             onChange={onInputChange}
             required
             label="Address"
-            // validation="Please provide a address"
-            // invalid
           />
         </MDBValidationItem>
         <br />
