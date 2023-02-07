@@ -1,8 +1,7 @@
-              import * as types from "./actionTypes";
+import * as types from "./actionTypes";
 import {
   take,
   takeEvery,
-  takeLatest,
   put,
   all,
   delay,

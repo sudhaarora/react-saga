@@ -2,17 +2,38 @@
   "users": [
     {
       "id": 1,
-      "name": "Sudha Arora",
+      "name": "Sudha Khatri",
       "email": "sudha@gmail.com",
       "phone": 1234567894,
       "address": "Mangalam Anada City"
     },
     {
-      "name": "tester",
+      "name": "testersdf",
       "email": "tester@gmail.com",
       "phone": "2743534599",
       "address": "test address here",
       "id": 2
+    },
+    {
+      "name": "sumanArora",
+      "email": "suman@gmail.com",
+      "phone": "1234676454",
+      "address": "tester here",
+      "id": 6
+    },
+    {
+      "name": "jdshfjh",
+      "email": "jgjhhsd@gmail.com",
+      "phone": "34237648",
+      "address": "hjdsfjsgd gsjdgfjs",
+      "id": 7
+    },
+    {
+      "name": "kjdshf",
+      "email": "hkhkhk@gmail.com",
+      "phone": "08696893016",
+      "address": "Flat No 1103, Tower-10, Mangalam ananda city, , Tiwari Rd, Dada Gurudev Nagar, Sanganer, Jaipur, Rajasthan 302029, Landmark: opposite of sanganer railway station",
+      "id": 8
     }
   ]
 }

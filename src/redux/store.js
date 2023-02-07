@@ -8,6 +8,7 @@ const sagaMiddleware = createSagaMiddleware();
 
 const middlewares = [sagaMiddleware];
 
+// eslint-disable-next-line no-undef
 if(process.env.NODE_ENV == "development"){
     middlewares.push(logger);
 }
